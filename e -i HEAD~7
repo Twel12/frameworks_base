@@ -1,0 +1,1549 @@
+[33mcommit 2b74fd0d9ebb72e50bd0f23197e3223116d47306[m[33m ([m[1;36mHEAD -> [m[1;32mten-plus[m[33m)[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Thu Oct 8 08:47:56 2020 +0530
+
+    Fixups
+
+[33mcommit 828fb24c85bd70be1d9311fc1efd130184b6daf3[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Thu Apr 30 19:13:56 2020 +0530
+
+    base: Introduce Applock [1/2]
+    
+    * Built upon the initial commit by "Anass Karbila <anaskarbila@aospa.co>"
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: Ida21d22035d708a359eaaa29e2c48ff6f0dd6627
+
+[33mcommit 8938d080fcde685ac33d613672d62aef1bb0cd37[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Sat Jul 25 15:38:40 2020 +0530
+
+    base: Let legacy apps scale fully to the display's aspect ratio
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: I2d74e703b8884248a54810df84bb8ff4ec744462
+
+[33mcommit 97e5b1d5bc26d2ffcb7c96f7f3845db8cd4b51e0[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Wed Aug 12 20:04:39 2020 +0530
+
+    BiometricService: Avoid null pointer exception
+    
+    * Occurs when authentication fails too many times and we are running both Face and Fingerprint detection
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: I6f3eb5b1fee28c25b6d95c772e5d5668ce5a26ed
+
+[33mcommit 7c8d8f0e8b5e6f632903f339990dd714b05ef30b[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Mon May 11 21:17:54 2020 +0530
+
+    base: Use 2 modalities concurrently in BiometricPrompt if available
+    
+    * Add a new dialog view to incorporate both Face and Fingerprint icons
+    * Example: Face and fingerprint
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: Idaf47f4fbf062a865f0c7a02fd495fdb7133578e
+
+[33mcommit 0d808e115c7c76d1e29cf78b06711ee95c89549a[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:20:24 2020 +0530
+
+    Revert "SystemUI: fix size of icon of vibrate ringer mode"
+    
+    This reverts commit 63f65d4722de6b33adaf425914f31b1ec8ad953b.
+
+[33mcommit 50f1c563f7af31b177cb0222e5410c2dd5617845[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:20:16 2020 +0530
+
+    Revert "VolumeDialog: display default row when active row is notification"
+    
+    This reverts commit 0c7af949d225407b71136e0360f85f93c3fff45a.
+
+[33mcommit 8408a4592983dccd3334a04f9a59fc0ebc505a39[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:20:06 2020 +0530
+
+    Revert "VolumeDialog: notifyVisible after the volume panel is fully hidden"
+    
+    This reverts commit f6bedc7da02e5b758ecddb1c81217afff7a73cc1.
+
+[33mcommit 5d25f669a3d6de47a1fad83a205bca202da55dcd[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:19:58 2020 +0530
+
+    Revert "VolumeDialog: Redo expanded volume panel"
+    
+    This reverts commit ebe6026dbb9bf1b661339380c7e258e044c8df54.
+
+[33mcommit b1c6140753c9e58a3ee27c5d30a645cc31f5c6f6[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:19:50 2020 +0530
+
+    Revert "VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver"
+    
+    This reverts commit 9e033bb879da2bdad4d130896a7bd439b226682e.
+
+[33mcommit 35029790f69f70d6c7f5199b4c1e621848252a66[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:19:41 2020 +0530
+
+    Revert "VolumeDialog: Show the notification stream when unlinked"
+    
+    This reverts commit 831596e8bf7d89011533d4250e3ef6b4810ad03f.
+
+[33mcommit c31dff05e043dce1a819505b4961d7ee8d747101[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:19:30 2020 +0530
+
+    Revert "VolumeDialog: Set the gravity and rotation based on the panels location"
+    
+    This reverts commit 656e2b8971cf222d97bc8d892da9479ed7559a4b.
+
+[33mcommit a81170d96b487062b5ee7d9eea14ab12a8b0dc8a[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:19:18 2020 +0530
+
+    Revert "VolumeDialog: Hide the music row if there is an ally stream"
+    
+    This reverts commit 181981c2f80442191dbc9e1cfb09e7a7f19f2db2.
+
+[33mcommit 829846f51edd2ec8824d0c664aeec63af5085bda[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:19:10 2020 +0530
+
+    Revert "VolumeDialog: Fix muting streams with a minimal volume of 1"
+    
+    This reverts commit 4f36fbdbc96d080546fa8b4066f95f75dfbce6c6.
+
+[33mcommit 5b8858ab847f640d71fa03b181771cd54927fec8[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:19:00 2020 +0530
+
+    Revert "VolumeDialog: Treat ring volume the same as others on icon tap"
+    
+    This reverts commit c568d0189aee88f92f41644eb718429fedefffff.
+
+[33mcommit a3eb6603d4d347dec2d9ea48492349ec49529b67[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:18:51 2020 +0530
+
+    Revert "VolumeDialog: Move the media output selector next to the expandable indicator"
+    
+    This reverts commit c72eeef3926c5cce21721b7a35856fa7d45c7ed4.
+
+[33mcommit 82e58e0705cc999d9cc6a5901edc2b5e488dc2ea[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:18:43 2020 +0530
+
+    Revert "VolumeDialog: Implement expand/collapse animation"
+    
+    This reverts commit ad142fc0a899324ec249202d4ff5b26bcfb9ec97.
+
+[33mcommit 84c9106a5994d16672f3ccdf5a95e0252099f0ff[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:18:11 2020 +0530
+
+    Revert "VolumeDialog: Prevent hiding the ally stream"
+    
+    This reverts commit e833c750dc2386cadb26656c889a02a6661e40e9.
+
+[33mcommit 174cb90272e5ae6bc4ae7e783a340fdf29c07d78[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:17:57 2020 +0530
+
+    Revert "VolumeDialog: Don't change the background of the expandable indicator"
+    
+    This reverts commit 138562f45fa0c1bf933c0292b1cefbfc20e4119b.
+
+[33mcommit a2f48e44678ad04a7ea823464f05fee73bf3a9dd[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:17:36 2020 +0530
+
+    Revert "SystemUI: Improve alert slider dialog"
+    
+    This reverts commit 1672a0dc880041f37eb8080c6660fadb16eaa890.
+
+[33mcommit e613ad8f355b7a13e2ea846171f0a7db2d4e47ee[m
+Author: Twel12 <shivansh.aeyron@gmail.com>
+Date:   Wed Oct 7 18:17:24 2020 +0530
+
+    Revert "base: SystemUI: hide ringer button if alert slider is present"
+    
+    This reverts commit bc335f2a409462eeaf3c4a32d210aee72434a9d6.
+
+[33mcommit bf28f29b64e6d0da1d189331ce246c7950b74c8c[m[33m ([m[1;31morigin/ten-plus[m[33m)[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 10:05:26 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: I2032c7b7de914be931378f212f87e7d47559d685
+    (cherry picked from commit 3b516d9dc1bafb2b870f60ce85d8fbb3d3d964c0)
+
+[33mcommit 0b0015a61e0a2d8547529838735970883e5296cd[m
+Merge: b74472610cb 3e5300f0c4a
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:34:48 2020 +0000
+
+    Merge "Revert "telephony: Conditionally ignore RSSNR signal level"" into ten-plus
+
+[33mcommit b74472610cb42b45451b66bf526cccce1cc6b0cf[m
+Merge: fffbaf7a7fb 9a3492cd7c8
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:34:12 2020 +0000
+
+    Merge "PackageManager: Add configuration to specify vendor platform signatures" into ten-plus
+
+[33mcommit fffbaf7a7fbfec560b147ff6b08092b13035a793[m
+Merge: ba7ff888631 d1dfda43206
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:34:05 2020 +0000
+
+    Merge "Pocket lock: Improve on fod devices" into ten-plus
+
+[33mcommit ba7ff888631a6a931fe8995c3423c3ff76b37c33[m
+Merge: 6437726b503 bff96587f2b
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:33:46 2020 +0000
+
+    Merge "Pocket Lock: Don't show immersive confirmation ui" into ten-plus
+
+[33mcommit 6437726b503b76ce7723b3cb55cfd76f4d5053db[m
+Merge: 95c92ec3f1b ea37e15bf64
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:33:28 2020 +0000
+
+    Merge "TriStateUi: Don't show when screen is off" into ten-plus
+
+[33mcommit 95c92ec3f1b0302677857b750dcf991e8f637e1c[m
+Merge: e156c0d91df bef84b30a04
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:33:15 2020 +0000
+
+    Merge "SystemUI: Hide non-system overlays when biometric prompt is showing" into ten-plus
+
+[33mcommit e156c0d91df129c85a42f397094bf41aefef4553[m
+Merge: 120ce68217e 8dc77124077
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:33:01 2020 +0000
+
+    Merge "SystemUI: BiometricPrompt: Call onDialogAnimatedIn when we are showing the dialog without animation" into ten-plus
+
+[33mcommit 120ce68217ec84f997d9d43a019bbafd4b8a268c[m
+Merge: 84e530d22ab f32260684bf
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:32:46 2020 +0000
+
+    Merge "SystemUI: BiometricPrompt: Adjust layout if FOD is present" into ten-plus
+
+[33mcommit 84e530d22abef0eb748d8b562c57ec447b7cc557[m
+Merge: 545b72a5ac4 de4bd80dddf
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 16 12:32:31 2020 +0000
+
+    Merge "Revert "FingerprintDialogView: Improve on fod devices"" into ten-plus
+
+[33mcommit 545b72a5ac4c8e1e643081e56b86ea4a45c1f9cc[m
+Author: Vignesh Kulothungan <vigneshk@codeaurora.org>
+Date:   Mon Jul 15 17:23:33 2019 -0700
+
+    WiredAccessoryManager: support for multiple display ports
+    
+    Add support to connect more than one display port.
+    Map device index to stream and cable index to controller for
+    display ports.
+    
+    CRs-Fixed: 2504389
+    Change-Id: I43b0478e0b21d1f36b71476d4cdb4029897ee7b8
+
+[33mcommit df8ad7f9ba07e7d03d12737b241305bdccb3d279[m
+Author: Dhananjay Kumar <dhakumar@codeaurora.org>
+Date:   Tue Apr 30 01:14:58 2019 +0530
+
+    audio: update WiredAccessoryManager to use ExtconUEventObserver based on events available
+    
+    Update WiredAccessoryManager to use ExtconUEventObserver only if
+    at least one event is available with ExtconUEventObserver
+    
+    CRs-Fixed: 2444687
+    Change-Id: I457630428a06016ab71c797efd887f55fcba70c6
+
+[33mcommit 039abe226f51075ebd9e195b0405def723dfe831[m
+Author: Haynes Mathew George <hgeorge@codeaurora.org>
+Date:   Mon May 7 17:09:36 2018 -0700
+
+    WiredAccessoryManager: Support for multiple extconn devices
+    
+    Add support for multiple extconn connections.
+    Support multiple connections with multiple controllers.
+    
+    CRs-Fixed: 2262706
+    Change-Id: I42aca85a6834f6c4ab6c5659ef2836134892518d
+
+[33mcommit f029f71b98978a15c52b1e5b58eceda2fc410bcf[m
+Author: Aalique Grahame <agrahame@codeaurora.org>
+Date:   Wed Apr 25 15:48:20 2018 -0700
+
+    WiredAccessoryManager: update extcon file paths
+    
+    Update the file paths used in WAM to reflect the new location
+    of the extcon files.
+    
+    CRs-Fixed: 2232066
+    Change-Id: I3884074e71ea9fe974b4b2de7161dce8e5d08e76
+
+[33mcommit 5104e59d547d30c4628e273a3ae6cd8f2235e904[m
+Author: Revathi Uddaraju <revathiu@codeaurora.org>
+Date:   Thu Aug 3 15:40:37 2017 -0700
+
+    WiredAccessoryManager: Add support for DisplayPort Audio
+    
+    Add and handle uevents for DisplayPort to route the audio
+    data to DisplayPort interface.
+    
+    CRs-fixed: 2088965
+    Change-Id: I34747de57183dfad50cce6c1809c06267936e95a
+
+[33mcommit 3e5300f0c4a1819e715698fe3bb1c28dc0994a2e[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Sep 14 17:08:52 2020 -0300
+
+    Revert "telephony: Conditionally ignore RSSNR signal level"
+    
+    This reverts commit 17b52da4491abb702daaafe638ff15161b0e5c76.
+    
+    Change-Id: Ia4c91e2ad717aacce4afbff3a8375f65e07ae6de
+
+[33mcommit 9a3492cd7c8e668e8a531d57404649f4dbd45810[m
+Author: Ethan Chen <intervigil@gmail.com>
+Date:   Wed Dec 6 09:58:03 2017 -0800
+
+    PackageManager: Add configuration to specify vendor platform signatures
+    
+    Devices with split system/vendor images may want to use the OEM's vendor
+    image. In that case, the OEM's platform signature is not actually the
+    same as the platform signature used to sign the Lineage system image.
+    Allow devices to specify an OEM platform signature which will also be
+    recognized as the system's platform signature.
+    
+    Change-Id: Ida9bb25a32234af9d9507a214eae6a4672320d2b
+
+[33mcommit d1dfda43206f8af6d15b115ee2da463080f2d6e3[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Sat Sep 12 13:35:49 2020 -0300
+
+    Pocket lock: Improve on fod devices
+    
+    Change-Id: I144b0eb18bb8686e8ebd391532db3d80925a49e7
+
+[33mcommit bff96587f2b82cb6982715c3a915ff71faa68a5e[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Sat Sep 12 11:55:04 2020 -0300
+
+    Pocket Lock: Don't show immersive confirmation ui
+    
+    Change-Id: I7de7cda0a1482ef7ef107cd69a28ac80b9f747d4
+
+[33mcommit ea37e15bf6411e433a8552a1e17dc6d993c5d5ff[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Mon Mar 2 10:44:39 2020 +0530
+
+    TriStateUi: Don't show when screen is off
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: I5931a46b9eaed60ed0a38e12cc39886475f912d9
+
+[33mcommit bef84b30a04869c5eae9fe7fac0294400a91ae0a[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Sat Jul 25 15:29:22 2020 +0530
+
+    SystemUI: Hide non-system overlays when biometric prompt is showing
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: I46668a3f747081dc35e76258a9fff2448b3770a5
+
+[33mcommit 8dc771240776b36c63ea1382d70bb5baf200e504[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Tue May 19 22:09:24 2020 +0530
+
+    SystemUI: BiometricPrompt: Call onDialogAnimatedIn when we are showing the dialog without animation
+    
+    * This fixes a bug where the dialog gets stuck on screen rotation and mPendingDismissDialog is true
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: I0c6ae1a03626ed79cb8222342712be8f10f2a72c
+
+[33mcommit f32260684bf3a6c8950a0bf7c8230fd659638b65[m
+Author: rituj <ritujbeniwal@gmail.com>
+Date:   Mon May 18 12:23:21 2020 +0530
+
+    SystemUI: BiometricPrompt: Adjust layout if FOD is present
+    
+    * Devices can override "biometric_dialog_fod_margin" if the default value(44dp) does not yield the desired outcome.
+    
+    Signed-off-by: rituj <ritujbeniwal@gmail.com>
+    Change-Id: I0b68b1ee6c5a8031deb195fbdb0b23c33b0ab590
+
+[33mcommit de4bd80dddfa0dc093a69c675a32abc52b10e5d4[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Sat Sep 12 10:14:31 2020 -0300
+
+    Revert "FingerprintDialogView: Improve on fod devices"
+    
+    This reverts commit 53c4ce22fd1daf27df4b704e5971843b3e20d832.
+    
+    Change-Id: I9b14c3bb7d62ea6bc8320c94624950c368d74a03
+
+[33mcommit 9c1a76bffdd9fd1d27f90c1c7a8546f80eb12bce[m
+Author: Chenyang Zhong <zhongcy95@gmail.com>
+Date:   Sat Sep 12 10:34:55 2020 -0400
+
+    SystemUI: Set correct animation duration for linear brightness slider
+    
+    The log scale slider uses GAMMA_SPACE_MAX as the slider max value, which
+    is usually 4 times the max value of linear brightness slider (1023 to
+    255). Slider animation duration depends on the slider max, so use the
+    proper value for each case.
+    
+    Signed-off-by: Chenyang Zhong <zhongcy95@gmail.com>
+    Change-Id: I2bd8f0d9de3aa839970bdce9f69069284073c5e6
+
+[33mcommit 48d938d3b83a27d637c1900b8e5b26d6fcf69cf6[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Sep 10 15:21:49 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: I1661448795245f25710be8f5abcd5e974f398c6a
+
+[33mcommit 0aaf4943f95994b531132219575a7a4b02d32b75[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Sep 10 15:17:36 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: I14e45a03da4cf828ec5d9fbc5bcec4ec6b40d925
+    (cherry picked from commit 1c3ece13ccd7519c87552f0f1892afb31ac4a98f)
+
+[33mcommit c2d2f11fe009ad98a075b5c6f2197cac8ebe2d90[m
+Author: Steve Elliott <steell@google.com>
+Date:   Mon Aug 3 13:45:44 2020 -0400
+
+    Mark implicit PendingIntents as immutable
+    
+    Bug: 156020795
+    Test: manual, atest
+    Change-Id: I72206c7a52b067b77d6542d170a6483713dfeee7
+    (cherry picked from commit 84e08280d3882cfe4bad12ab426016c6d0efc7fb)
+    (cherry picked from commit 599c3e4b75a638a725de1c96bab762cdaae9eb22)
+
+[33mcommit 268b69752bfecd7791f67e0c0eb3f55d69500328[m
+Author: Yu-Han Yang <yuhany@google.com>
+Date:   Mon Jun 8 14:59:23 2020 -0700
+
+    DO NOT MERGE: Remove unused intent in NiNotification
+    
+    Bug: 154319182
+    Test: manual
+    Change-Id: I5958a8fb442cf4506e1824243493f91aea34a7cc
+    Merged-In: I5958a8fb442cf4506e1824243493f91aea34a7cc
+    (cherry picked from commit 2b313d61aed6d99cb2a3ac2dad6f7d3993d0b8ac)
+
+[33mcommit 6f79948b338a07d40121cd77372fccb89a42340c[m
+Author: John Reck <jreck@google.com>
+Date:   Mon Jul 6 16:10:49 2020 -0700
+
+    Add missing isShellUser check
+    
+    Bug: 160390416
+    Test: verified command still works from shell
+    Change-Id: I23bb06e00f1623e4f27c02d7eb2c0d273b40771b
+    Merged-In: I23bb06e00f1623e4f27c02d7eb2c0d273b40771b
+    (cherry picked from commit 80a9cce44b52081033b730729c6ce0a1bb9edf87)
+
+[33mcommit effef88ba21f32c6ecbef9f5fa1c623f529cd249[m
+Author: Patrick Baumann <patb@google.com>
+Date:   Fri Mar 6 10:34:17 2020 -0800
+
+    Do not set referrerUri on SessionInfo for non-owners
+    
+    This change leaves the referrerUri field null when the caller leading to
+    its production is not the owner of the session.
+    
+    Bug: 142125338
+    Test: atest SessionReferrerUriTest
+    Change-Id: I84679ea0636aa2097e25e23813c48134c9cc1d75
+
+[33mcommit e921e161ee6c133a18e6b5e662217ee8b51063c8[m
+Author: Rhed Jao <rhedjao@google.com>
+Date:   Mon Jun 22 18:32:49 2020 +0800
+
+    Tests no screenshot is copied when user consent timed out
+    
+    Bug: 152944488
+    Test: BugreportManagerTest#normalFlow_full
+    Change-Id: I5bc8fcbff908258a20c5515a6ba092ceab1cc447
+    Merged-in: I5bc8fcbff908258a20c5515a6ba092ceab1cc447
+    (cherry picked from commit 9516a007c5e9a86a9b79fec4a7a0817e92d8bb39)
+
+[33mcommit ea275244cf9297e4261460ab3921bf6bfbb83389[m
+Author: Winson Chiu <chiuwinson@google.com>
+Date:   Tue Jun 16 21:41:22 2020 +0000
+
+    Revert "Ignores protected broadcasts if not priv-app"
+    
+    Revert of I5bd2bf3bd7c38fd9cc563a02b24bc569495d79ed
+    
+    For now, allow all system apps to declare protected
+    broadcasts. This will be cleaned up in a future change.
+    
+    Bug: 158570769
+    
+    Merged-In: I54d236c0a6daaa934bd64a3bd05e2654e0e868fe
+    Change-Id: I54d236c0a6daaa934bd64a3bd05e2654e0e868fe
+    (cherry picked from commit e1843e8a1fe3dda4038c3474e6321854aac99127)
+
+[33mcommit f82581aca198c9b095f1693359ce2684982f3ec5[m
+Author: Beth Thibodeau <ethibodeau@google.com>
+Date:   Mon Jun 15 13:24:18 2020 -0400
+
+    Make view intent immutable
+    
+    Bug: 156959408
+    Test: manual, atest
+    Change-Id: I80de1ea9c4535559f4ca2838a66da9e19eacf49d
+    (cherry picked from commit 4cecd359ab06ab8653c9381e660c3f1b1b19c94a)
+    (cherry picked from commit 64049fad82c13030c365b52b9538d7cf47ebf876)
+
+[33mcommit e6bfc4416e48097673330e30cfb335e50d835471[m
+Author: Yu-Han Yang <yuhany@google.com>
+Date:   Wed Jun 10 17:11:16 2020 -0700
+
+    Remove unused intent in NFW notification
+    
+    Bug: 156123285
+    Test: builds and tests passing
+    Change-Id: I81fe2b1df96b73a43123851ab98575feacf3331a
+    Merged-In: I81fe2b1df96b73a43123851ab98575feacf3331a
+    (cherry picked from commit 9fc2876a80a6e72eae1d1da1422a4cf399d97acb)
+
+[33mcommit 3e32a54e794110c2b4f66b2783731c19e7ad3575[m
+Author: Christopher Tate <ctate@google.com>
+Date:   Thu May 28 17:49:53 2020 -0700
+
+    Only autoVerify at install for new hosts
+    
+    Re-run app link verification at update time only when the set of hosts
+    has expanded.  Intentionally revoke verify history when an app stops
+    using autoVerify, as a one-time measure to place it back into the
+    non-autoverify model for tracking the user's launch preferences.  If the
+    app starts using autoVerify again later, it behaves identically to an
+    app that has never done so before.
+    
+    Bug: 151475497
+    Bug: 146204120
+    Test: described on master CL
+    
+    Merged-In: I200d85085ce79842a3ed39377d1f75ec381c8991
+    Change-Id: Ibaf087946966ad82d60c7b255e3ee75990716b63
+    (cherry picked from commit d3a1be3d9e97765df7b0413b52e7c05eff247607)
+
+[33mcommit 043848fbd3ff78b4acd68be06e6d94dc18d78f1c[m
+Author: Winson <chiuwinson@google.com>
+Date:   Thu Apr 23 10:45:55 2020 -0700
+
+    DO NOT MERGE: Verify INSTALL_PACKAGES permissions when adding installer package
+    
+    Without this check, any package can set the installer package of
+    another package whose installer has been removed or was never set.
+    This provides access to other privileged actions and is undesired.
+    
+    Bug: 150857253
+    
+    Test: manual verify with proof of concept in linked bug
+    Test: atest android.appsecurity.cts.PackageSetInstallerTest
+    
+    Change-Id: I2159c357911ff39ffd819054b42f96ae86bc98bc
+    (cherry picked from commit 75f673223649bb6cf3ec076aaa8f8043b940d7c9)
+
+[33mcommit d465cd13033c5d68da335fd2e2b7291f338e8ee3[m
+Author: Chris Tate <ctate@android.com>
+Date:   Fri Mar 20 18:22:02 2020 +0000
+
+    Revert "Revoke 'always' web handler status when not autoverifying"
+    
+    This reverts commit a8fb6dc1671c93b8063c9888339959d9cd9728e9.
+    
+    Reason for revert: Inadvertently broke link handling stickiness even for well behaved apps
+    
+    Bug: 146204120
+    Test: install app that handles web urls; set to 'always' in Settings;
+    install same apk again.  Verify that app is still in 'always' state via
+    'adb shell dumpsys package d'
+    
+    Merged-In: If9046cb420961b8ef0333e9f1115eb69fb92242e
+    Merged-In: I36d9c352e741e88b9fc773b084bef3991b6d96ed
+    Change-Id: Ifac4f0c044c2c575a29bdd5ce5d14d12373fbe70
+    (cherry picked from commit e09a79200291f39e23f7276b0ffc571f1ac33f93)
+
+[33mcommit ae95cd26cf3e8fea28332b2357addf5efc1f691c[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Sep 10 14:11:48 2020 -0300
+
+    fixup - PackageManagerService: Protect forced enabled components at runtime
+    
+    Change-Id: I20002e70834437316232d73672986a44d1503f3e
+
+[33mcommit 71757f259ff64220e27a255aeef5044ec4bcbcf4[m
+Author: Ashwin R C <ashwin2001achu@gmail.com>
+Date:   Thu May 28 16:19:12 2020 +0000
+
+    FODCircleView: Update FOD icon position on DreamingStateChanged
+    
+    * Currently the icon doesn't switch back to its original
+      position when coming back to lockscreen from AOD. This
+      patch fixes it by updating the FOD icon position when
+      the dreaming state is changed.
+    * See: https://imgur.com/a/LvaWMBM
+    
+    Change-Id: Iff7d9c68d05ef860e18f101d9aaca68254ba5667
+
+[33mcommit 03fadc2cccda4a63f329706f0630394f55527dfc[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Sep 10 13:55:05 2020 -0300
+
+    fixup - base: do not use new lockscreen layout for bypass
+    
+    Change-Id: I896c607687fb88ba53c32e1d05ea881525a83223
+
+[33mcommit 3a42b84393f012258e68a071ef67cfde161d0549[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Wed Sep 9 00:42:02 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: I273f032520933d82b098bf9c9a5059b5601bee91
+
+[33mcommit 93715797589d5530dfb90ca0b14103ef437e5cc2[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Tue Sep 8 21:26:39 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: I401710079f76a0321bd10afb59050d88c93bcc2c
+
+[33mcommit 39a780247b6c80faf6cf3ca4cf22c8518ad35840[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Tue Sep 8 20:01:45 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: Ic65337c749070c6446b165325d465c15d483b191
+    (cherry picked from commit aced0167f45a7bc8cd0c9232d285e4deaba5ef0b)
+
+[33mcommit ee7896713224e0020edce3c875d3b38af5b7d4b0[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Tue Sep 8 20:01:08 2020 -0300
+
+    base: Move pocket lock string to correct place
+    
+    Change-Id: I8fe7f0e15f90d9f5479732762dc5973c5528937b
+
+[33mcommit 823e74156ede2b848b1961370aefe988796cc43e[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Sep 7 20:14:23 2020 -0300
+
+    Revert "Implement edge long swipe gesture [1/2]"
+    
+    This reverts commit b20d8026dc97cab284fcf6ee52ab65f98b10f8f6.
+    
+    Revert "SystemUI: Blacklist KEY_EDGE_LONG_SWIPE_ACTION for tuner"
+    
+    This reverts commit 14c24fe7aedb50431281542fbfd6a33d082d342b.
+    
+    Change-Id: I448900f32772b8be51f699de5bf4ae07346afd9f
+
+[33mcommit 1ff966f6fd92a12b58a0e01b74d81e38ec1068cc[m
+Author: DennySPb <dennyspb@gmail.com>
+Date:   Thu May 28 20:59:47 2020 +0300
+
+    PocketJudge: allow register vendor pocket sensor
+    
+    Some devices (ie OnePlus) have own pocket sensor. This change allow to use
+    native pocket sensor instead of proximity and light.
+    
+    Sensor name must be specified in device tree overlay.
+    In this case PocketService will try to use vendor sensor first.
+    If sensor wasn't found, fallback sensors (proximity and light) will be in use.
+    
+    Example for OnePlus sensor:
+    <string name="config_pocketJudgeVendorSensorName">oneplus.sensor.pocket</string>
+    
+    Change-Id: Ibe423478cfd9d49e0831e2df0af793178f62c0e0
+    Signed-off-by: DennySPb <dennyspb@gmail.com>
+
+[33mcommit 34f1d27dbacf78e5ae57e803c564e9d87817bd2d[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Tue Sep 8 09:44:29 2020 -0300
+
+    PocketLock: fix flickering on animations
+    
+    Change-Id: I4b5499042d0e9ae8f73ecf5c32030d146f640362
+
+[33mcommit 03fa1bd3dd343fa906e15171a42ea7b446d9ed15[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu May 2 21:35:51 2019 -0300
+
+    Pocket lock: Add config_pocketModeSupported overlay
+    
+    Change-Id: I6768c9f8cdd40b2a62df3bd9ddfa04022d69ce10
+
+[33mcommit 42be7a4deb7b1b51fe6fda59c01e952f2839e4fd[m
+Author: Chris Crump <chris@cypheros.co>
+Date:   Wed Apr 22 14:24:18 2020 -0400
+
+    SystemUI: Block face authentication when device is in pocket mode
+    
+    Use pocket lock to dertermine if the device is in pocket, don't listen for face authentication if so. This helps not triggering failed attempts
+    
+    Change-Id: Iae290dd81ec1370e26ef1c0648b7c7c1cc413906
+
+[33mcommit 6422ca40ae02430c7e751cafb65e89c17997c8aa[m
+Author: RadixCube <radixcube@gmail.com>
+Date:   Sun Jun 2 18:14:51 2019 +0000
+
+    pocket: Reduce sleep timeout for pocket lock
+    
+    *if the proximity value changes within 10s, pocketlock exits to lockscreen. Inorder to avoid that reduce timeout to 3s
+    
+    Signed-off-by: RadixCube <radixcube@gmail.com>
+    Signed-off-by: Josh Fox (XlxFoXxlX) <joshfox87@gmail.com>
+    Change-Id: Iee08801534bebacc2fc62f0bc6e3a0712ce12712
+
+[33mcommit 318dc861a6fd6c56ccecf8053e029382ac66be07[m
+Author: Anushek Prasal <anushekprasal@gmail.com>
+Date:   Sat May 11 23:43:56 2019 +0530
+
+    pocket: Use MD2 lock drawable
+    
+    Change-Id: Ifb89a68505a9f9b401a2474b5179ea65e9c0e3ce
+
+[33mcommit a40ab64477d00a0af071932a0d0971081b89dcce[m
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Tue Oct 29 17:40:41 2019 +0100
+
+    Pocket lock improvements
+    
+    * Fix auto hide not working correctly
+    * Restore systemui visibility when hidden
+    
+    @ZeNiXxX
+    * remove faceunlock logic and adapt for android 10
+    
+    Signed-off-by: ZeNiXxX <zenixxx.havoc@gmail.com>
+    Change-Id: I61b38798d01775b252af88abb01dd2423b3a7638
+
+[33mcommit 16fffc697bfa3f7628316f92df2689ba56426792[m
+Author: TheStrix <parthbhatia98@gmail.com>
+Date:   Wed Mar 6 20:02:08 2019 +0530
+
+    pocket: Fix pocket lock view for display cutouts
+    
+     - Use LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES layout
+       flag to extend pocket lock view for display cutout mode.
+    
+    Change-Id: I21e4e47cf999b3a0f3d6ebf9165ba9f5596ece0e
+
+[33mcommit 065f4e5ec3e1eeb1616b57a1bcf9ec33c4b92f71[m
+Author: TheStrix <parthbhatia98@gmail.com>
+Date:   Wed Mar 6 14:40:06 2019 +0530
+
+    pocket: Adjust sleep timeout for pocket lock view to 10 secs
+    
+     - Fix the case where user sets a high value for sleep timeout in display settings
+       and the pocket view is also displayed for that much duration.
+    
+    Change-Id: If6c4daa1fd98992141f22db70e0e86d5d990f789
+
+[33mcommit 1cccb6b28c8966c809f4a2e581acdc3cf83e768f[m
+Author: Chris Lahaye <dev@chrislahaye.com>
+Date:   Tue Oct 29 17:37:17 2019 +0100
+
+    pocket: introduce pocket bridge
+    
+    This service communicates pocket state to the pocket judge kernel driver.
+    It maintains the pocket state by binding to the pocket service.
+    
+    Ticket: NOUGAT-49
+    
+    Change-Id: Iee77f767f23d3f77a0d1d871f9305f3b3c6d6630
+    Signed-off-by: Chris Lahaye <dev@chrislahaye.com>
+    Signed-off-by: Alex Naidis <alex.naidis@linux.com>
+    Signed-off-by: ZeNiXxX <zenixxx.havoc@gmail.com>
+
+[33mcommit d5289d22004d51dfba310888ae7a7930ea784aaf[m
+Author: Alex Naidis <alex.naidis@linux.com>
+Date:   Mon Aug 14 20:56:16 2017 -0400
+
+    PocketService: Adjust light sensor rate to 400ms
+    
+    We already adjusted the proximity sensor rate to
+    400ms, so adjust the rate for the light sensor
+    accordingly and create a tunable.
+    
+    Change-Id: Ie6dda80df8cdc677eb6cdb873a5ce1e888572fe7
+    Signed-off-by: Alex Naidis <alex.naidis@linux.com>
+
+[33mcommit a90b688d67060f5afa06f42b6e3ed9a332b586ed[m
+Author: Chris Lahaye <dev@chrislahaye.com>
+Date:   Tue Sep 26 19:19:19 2017 +0200
+
+    pocket: Add hardware acceleration and properly maintain SYSTEM_UI flags
+    
+    Change-Id: I585598242beec34bd92c5df5836ab395b36cea05
+
+[33mcommit d02175882883e2e7a785d87338c71a3c95dd515f[m
+Author: Carlo Savignano <carlosavignano@aospa.co>
+Date:   Tue Oct 29 23:49:36 2019 +0100
+
+    policy: introduce pocket lock
+    
+    * Block touch screen and keys inputs when device is in pocket.
+    * Safe-door to disable pocket lock within long press power button
+      if sensors do not behave correctly after PocketManager.isDeviceInPocket()
+      returns true.
+    * Window uses TYPE_SYSTEM_ERROR flag with ensure high
+      priority over the lockscreen and other high priority windows.
+    * Do not illuminate buttons when pocket lock is showing.
+    * Disable fingerprint events and gestures when in pocket
+    * Be friendly towards Keypress Boost
+    
+    Contributors:
+    Carlo Savignano <carlosavignano@aospa.co>
+    Chris Lahaye <dev@chrislahaye.com>
+    Anas Karbila <anaskarbila@aospa.co>
+    Alex Naidis <alex.naidis@linux.com>
+    Park Ju Hyung <qkrwngud825@gmail.com>
+    
+    Ticket: NOUGAT-15
+    
+    @ZeNiXxX
+    * Fix  booting issues
+    * Fix  NPEs
+    * Bring to Android 10
+    
+    Change-Id: I34108fa38f28f15b0b99c8ebb6551dcc4dabad14
+    Signed-off-by: ZeNiXxX <zenixxx.havoc@gmail.com>
+
+[33mcommit 1475ef64d3313a6315c3c82447b1226d032e6e90[m
+Author: Carlo Savignano <carlosavignano@aospa.co>
+Date:   Tue Oct 29 16:43:22 2019 +0100
+
+    pocket: introduce pocket judge
+    
+    @ZeNiXxX
+    * Bring to Android 10
+    
+    Change-Id: I33153b451f5d38d83e226be0f76bda1ed022dd48
+    Signed-off-by: ZeNiXxX <zenixxx.havoc@gmail.com>
+
+[33mcommit f17d745c394b90edb6c0b99154b61a1bba1d2196[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Sep 7 19:20:45 2020 -0300
+
+    Revert "PowerManager: Add proximity check on wake"
+    
+    This reverts commit 727275542a9b66065f28c71cb4cd934cedf22113.
+    
+    Change-Id: Ic6baae62b4d6c3cca6173cb18fe8a21084bf883f
+
+[33mcommit 4375c828a9ae19d203de51cf283b1c2b4d1826cb[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Sep 7 19:12:03 2020 -0300
+
+    Revert "PowerManager: Move custom API definition to end of AIDL"
+    
+    This reverts commit a881c9a4b2eb09f712da9177e40394d2046a9aa7.
+    
+    Change-Id: Ib0d171c059dd15c13a7942d8bb571c27af6a2f7f
+
+[33mcommit 9941582eeb683e54f31241d38d556a133fc2bbd1[m
+Author: Timi Rautamäki <timi.rautamaki@gmail.com>
+Date:   Fri Sep 4 22:16:26 2020 +0200
+
+    SystemUI: fix NPE on global actions dialog
+    
+    SystemUI would crash when accidentaly double tapping reboot (at least when advanced reboot is enabled)
+    
+    test: manual
+    Change-Id: I0bdb2beda23b77fccedfb70e05f5105f275d56b9
+    Signed-off-by: Timi <timi.rautamaki@gmail.com>
+
+[33mcommit c7a4a13d124c8886c02d32b82c91aadd21f5887f[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Sep 7 19:05:38 2020 -0300
+
+    SystemUI: Remove useless overlay
+    
+    Change-Id: I0283010da2acbd44fe68af22c37ed0dab120a870
+
+[33mcommit 7d17f7428c3942439c393134d6d313e7d9f03e9e[m
+Author: zhangyupeng1 <zhangyupeng1@xiaomi.com>
+Date:   Thu Jul 23 21:56:37 2020 +0800
+
+    [BugFix][Fingerprint]fix client was canceled by service by mistake
+    
+    issue:
+    After the call of client A started in the lockout state returns,
+    after client B calls the fp service, A is dead,
+    a death notification will be sent to the service, and the service will stop clent B.
+    
+    solution:
+    Each time onAuthentication sets a flag mAlreadyDone to true.
+    Judge this flag as true in binderDie, and keep the current
+    fingerprint operation to avoid affecting the current user
+    
+    Signed-off-by: zhangyupeng1 <zhangyupeng1@xiaomi.com>
+    Change-Id: I56ce99505febbb48dc13ccfc3c2d120123da4fa3
+    Merged-In: I56ce99505febbb48dc13ccfc3c2d120123da4fa3
+
+[33mcommit e54a1a4d79a83c588511a8d0ffa97e0616bb65e4[m
+Author: Chenyang Zhong <zhongcy95@gmail.com>
+Date:   Mon Sep 7 23:58:57 2020 -0400
+
+    SystemUI: Option to use linear scale in BrightnessController
+    
+    BrightnessController switched to a log scale control after pie
+    (585ff988) because it matches the brightness perceived by human
+    eyes. However, if a panel uses LightState to control backlight
+    brightness and has a backlight max brightness > 255 (e.g. 2047
+    or 4095), changing brightness in the lower range of the slider
+    results in a very uneven brightness transition.
+    
+    LightState.color limits each channel to 8 bits (0-255), so the
+    normalized brightness gamma value is first converted to a range
+    of [0, 255], and then linear interpolated to whatever the panel
+    max brightness is in light HAL. Due to the nature of HLG used
+    in the conversion, a small increase in lower range of backlight
+    brightness results in a much more significant increase in gamma
+    than a small increase in higher range of backlight brightness
+    does. Therefore, the lost accuracy in the first integer
+    conversion to [0, 255] makes brightness transition uneven in
+    lower range.
+    
+    This patch adds an option to report linear value to light HAL.
+    Light HAL can then handle the linear-to-gamma conversion and
+    linear interpolation all together with minimum accuracy loss.
+    It uses 585ff988 as reference while adapting to the newer
+    refactored code.
+    
+    Signed-off-by: Chenyang Zhong <zhongcy95@gmail.com>
+    Change-Id: If219fd7622ff9931aab07588316418963ca5bb57
+
+[33mcommit b3d44f6e6492e14781df33b37226df8ea984abae[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Sep 7 19:48:15 2020 -0300
+
+    Cleanup - Improve face unlock behavior on devices with popup camera
+    
+    Change-Id: Ie4f358f58a2b47605921b8663fb161e9693c7781
+
+[33mcommit 4e2e1e81758764ca96318dcc609a2d48d811fb7b[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Sep 7 19:05:01 2020 -0300
+
+    Move config_faceAuthOnlyOnSecurityView to fwb/res
+    
+    Change-Id: Ifb80b9aa1493154fb53b06dcc791a89926466485
+
+[33mcommit 76219307a8c7f8d93cf524dfc0b420760b947193[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Sun Sep 6 16:42:27 2020 -0300
+
+    Improve face unlock behavior on devices with popup camera
+    
+    Also fix race condition on handleFaceLockoutReset
+    
+    Revert "fixup - KeyguardUpdateMonitor: Fix race condition before listening for biometrics"
+    
+    This reverts commit 5f9e830026038ac56f84872e7c7da08b999d6150.
+    
+    Revert "KeyguardUpdateMonitor: Fix race condition before listening for biometrics"
+    
+    This reverts commit e53b9b3b903e040da75970a154c0731515cac15e.
+    
+    Change-Id: I5d41270f8cfb2fb5cd66ab681d96804ebe7467db
+
+[33mcommit bc335f2a409462eeaf3c4a32d210aee72434a9d6[m
+Author: Hernán Castañón Álvarez <herna@paranoidandroid.co>
+Date:   Sat Aug 10 03:45:43 2019 +0200
+
+    base: SystemUI: hide ringer button if alert slider is present
+    
+    Signed-off-by: Hernán Castañón Álvarez <herna@paranoidandroid.co>
+    Change-Id: Ia0b3b095eed35b87bd81e2f96622391949f5b721
+
+[33mcommit 1672a0dc880041f37eb8080c6660fadb16eaa890[m
+Author: Anushek Prasal <anushekprasal@gmail.com>
+Date:   Tue Nov 12 15:41:19 2019 +0530
+
+    SystemUI: Improve alert slider dialog
+    
+    - Convert px to dip
+    - Modify the dialog to match toast
+    - Fix positioning for OP7 Pro slider
+    - Remove unused dimens and drawables
+    
+    Change-Id: I0c5aedf201d123f95b476ad9f4cd48a2820d89e1
+
+[33mcommit a4198ce8fadf648c7e9fc429ed32ba9f6272ef2f[m
+Author: Chris Crump <chris@cypheros.co>
+Date:   Mon Sep 30 16:47:42 2019 -0400
+
+    SystemUI: Introduce user interface for Alert Sliders
+    
+    Ported from OxygenOS and reworked for our alert slider
+    implementation. We target AudioManager instead of Zen,
+    icons are also the same as aosp and the dialog uses the
+    material theme as well as support for our themes.
+    
+    To use, the alert slider config must be enabled. By default,
+    the dialog shows on the left side. To move it to the right
+    side, set the location config to 1.
+    
+    Change-Id: Ie1954a44cc5242c95a731abd7404379ea638fe70
+
+[33mcommit 138562f45fa0c1bf933c0292b1cefbfc20e4119b[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Thu Aug 27 22:53:15 2020 +0200
+
+    VolumeDialog: Don't change the background of the expandable indicator
+    
+    * Add a divider between the rows the expandable indicator instead
+    
+    Change-Id: I912e007c895935c7b16bb605503486396546c90c
+
+[33mcommit 9941a3760e2d2fca91ba7e293be8adc51875d98a[m
+Author: Oasis Feng <git@id.oasisfeng.com>
+Date:   Mon Aug 31 02:53:45 2020 +0000
+
+    Fix CDM.requestNotificationAccess() in profile.
+    
+    If invoked by app running in managed profile, CompanionDeviceManager
+    .requestNotificationAccess() is actually trying to grant access to that
+    app in parent profile, which may not even exist.
+    
+    Notification listener may not need to be running in managed profile,
+    but in order to access and control media sessions in managed profile,
+    notification listener must be granted access in that managed profile.
+    
+    Test: Run test cases of CompanionDeviceManager in managed profile.
+    
+    Signed-off-by: Oasis Feng <oasisfeng@gmail.com>
+    Change-Id: Id33c4956097300c5ec1c6c50ebee91dee9a49c33
+
+[33mcommit 2f738ee2c45f6a214b8a7c13ecf165f484fab2d2[m
+Author: TheScarastic <warabhishek@gmail.com>
+Date:   Tue Sep 10 11:07:39 2019 +0530
+
+    FODCircleView: Add support for custom FP pressed icon
+    
+    * For those devices which were calibrated to use
+      non-solid color icons, add the icon in overlay.
+    
+    Change-Id: Ib8a19f5bf9aa9e18a6a9d8d1061aac0f984f5132
+
+[33mcommit a0907f95a8d4b1e54e9258be31933ba79b944f9a[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Fri Sep 4 10:45:15 2020 -0300
+
+    Revert "FODCircleView: Add Support for custom FP pressed icon"
+    
+    This reverts commit 799061f14f8e69e4a1d9c4f02fb4c742a03e5130.
+    
+    Change-Id: I9f6d015edd246c253a903c0b31f07e00c56ceb37
+
+[33mcommit e943e5fd6ff61aa1fd9183dc6392075d90f8155c[m
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Tue Aug 25 15:10:54 2020 +0200
+
+    PackageInstaller: Fix crash when uninstalling apps with fragile data
+    
+    * Fixes:
+      - https://gitlab.com/LineageOS/issues/android/-/issues/2298
+      - https://issuetracker.google.com/issues/148573843
+    
+    Change-Id: I5a27d6f02d17a52e1a1a2aff4fb46327ce5e6127
+
+[33mcommit 3703794202f271a6b055918e375be9ad799b87d6[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Fri Sep 4 10:37:09 2020 -0300
+
+    Revert "UninstallAlertDialogFragment: Catch IllegalArgumentException"
+    
+    This reverts commit 32d0652e065a754741c71e92ea79608c45cd0e74.
+    
+    Change-Id: I802711d2346ae24f06b3314321ac84abcabc91bc
+
+[33mcommit bf3fc364c24bec99c708129a4cc67d8c2c33c74a[m
+Author: Jesse Chan <jc@lineageos.org>
+Date:   Sat Aug 15 21:38:06 2020 +0800
+
+    Skip screen on animation when wake and unlock via biometrics
+    
+    Screen on animation is slow. Modern fingerprint sensor is *FAST*.
+    We need moar speed to deliver better user experience.
+    
+    * OEMs are doing this for years.
+    
+    Change-Id: I5f98259eb992b2f43872f957fcb0092412fe558c
+
+[33mcommit def4e8e32714ed92f1feec6d82f3386a3b881943[m
+Author: Alison Cichowlas <asc@google.com>
+Date:   Wed Aug 12 00:14:20 2020 +0000
+
+    Show the nearby chip for images and files too.
+    
+    This revealed that we weren't initializing the nearby intent
+    from the original intent, so that's fixed too. This should
+    ensure that flags and extras from the original intent make
+    their way to the available and installed nearby component.
+    
+    Change-Id: I0cac4b1ac63d95b0f0d2ef8d2e614674253c7cb4
+    Test: Share (an image and a non-image) from DocumentsUI
+    Fixes: 155487375
+    Fixes: 155676993
+    Merged-In: If0c0b754a066b0ec439a866de3eae84caca7b793
+
+[33mcommit 1d63143c4ebdf2b2e4ede5663d604ac9cc9d209f[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Sep 3 15:31:19 2020 -0300
+
+    NetworkTraffic: Make font size more consistent
+    
+    * Also rename net_traffic_multi_text_size -> net_traffic_qs_text_size
+    
+    Change-Id: Ib6e6b4a6bebf7dc34354a2630b33d5ca0d63ef57
+
+[33mcommit 3624070396b271d634575a88f721ddeee90323a0[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Sep 3 10:23:31 2020 -0300
+
+    PackageManagerService: Protect forced enabled components at runtime
+    
+    Change-Id: If11c60085bca844d248a0088656ad81415df3636
+
+[33mcommit 21927c0977e46f227118a04008bf172a6f45ac26[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Sep 3 09:39:20 2020 -0300
+
+    fixup - Require unlocking to use cellular quick tile
+    
+    Change-Id: If01b0b58c7bd4dbd38d95e3248d20fb40624a327
+
+[33mcommit b2f23bd14093c388a13f3d31b1eb4871059b224a[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Wed Mar 25 22:08:42 2020 -0300
+
+    Port face unlock feature
+    
+    * From motorola/foles_retail/foles:10/QPF30.130-15-7/38ece7:user/release-keys
+    
+    Change-Id: I35961bf5ab9ca0b72ec0b03b52067c6f4bf2c5d9
+    (cherry picked from commit 6bee5b40c67e281332c21511967d598081f7f7d2)
+
+[33mcommit 56e9074eb0b5f8257f8235f57edefb0559d3776b[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Aug 17 20:59:10 2020 -0300
+
+    FODCircleView: Fix settings observer
+    
+    Change-Id: Ie608e3f669594aeb7f566def0a4af577e631b503
+
+[33mcommit 00b128c22f2d74451dcdcf8c3972d8b87b632c2e[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Aug 17 20:58:26 2020 -0300
+
+    Revert "Fix fod view not appearing"
+    
+    This reverts commit 69148a8babf013c042c3c40b9f4383a4da157c77.
+    
+    Change-Id: I7365591f89671ec79ae00942a61af81789b39164
+
+[33mcommit 69148a8babf013c042c3c40b9f4383a4da157c77[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Mon Aug 17 16:12:24 2020 -0300
+
+    Fix fod view not appearing
+    
+    Somehow we cant use mContext from ImageView class
+    
+    Partially revert "FODCircleView: Improve code style"
+    
+    This reverts commit e5b817e939218628ff8756ed4cf90c3d848a1691.
+    
+    Change-Id: I90ab3b4d36aeafc854e14cef7df25e6967480367
+
+[33mcommit a642c983d3037d352c8227c3e03f3a6537a11f39[m
+Merge: 9ba2d3572a6 ed35d137f96
+Author: Henrique Silva <jhenrique09.mcz@hotmail.com>
+Date:   Fri Aug 14 13:29:24 2020 +0000
+
+    Merge "Automatic translation import" into ten-plus
+
+[33mcommit ed35d137f96324adddfb3069bbc4a967048e0178[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Fri Aug 14 10:28:44 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: I5def3bcf7c63044d0c1bf17657ab713e3b46de6e
+
+[33mcommit 9ba2d3572a6d21ee483499c8d29a836124372406[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Fri Aug 14 10:22:05 2020 -0300
+
+    Automatic translation import
+    
+    Change-Id: I6df9566d74a17d84bc16cc882cbb17276174f903
+    (cherry picked from commit 6893f1ecba78fd63bb452dda469ec520a59c8748)
+
+[33mcommit e5b817e939218628ff8756ed4cf90c3d848a1691[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Fri Aug 14 09:53:44 2020 -0300
+
+    FODCircleView: Improve code style
+    
+    Change-Id: I7719ae3f646c2c6d3372e49122fd974bae00de53
+
+[33mcommit 417c8f039d6eb158bccfb193e00178b57f93cfd5[m
+Merge: af79dd281ae 2cdeacfe733
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Fri Aug 14 01:18:42 2020 -0300
+
+    Merge tag 'android-10.0.0_r41' of https://android.googlesource.com/platform/frameworks/base into HEAD
+    
+    Android 10.0.0 Release 41 (QQ3A.200805.001)
+    
+    Change-Id: I69b2bb560bdf8acb8ea8f250859da3aed14f41bc
+
+[33mcommit af79dd281ae3b33d2867ea5972e286a52a021971[m
+Author: jhenrique09 <jhenrique09.mcz@hotmail.com>
+Date:   Thu Aug 13 18:25:54 2020 -0300
+
+    VolumeDialog: Fix tooltip dialog after expanded panel commits
+    
+    Change-Id: I665c8ea514ad30a685b7e429f8fe7fb25b29d031
+
+[33mcommit fa59a76680254acca4f0849c89ef72c1bbf44302[m
+Author: LuK1337 <priv.luk@gmail.com>
+Date:   Mon Jun 29 00:31:59 2020 +0200
+
+    webkit: SystemImpl: Make systemIsDebuggable() check IS_ENG as well
+    
+    * Since we are shipping userdebug builds by default
+      it'd be nice to keep signature and version downgrade
+      checks intact.
+    * Fixes : https://gitlab.com/LineageOS/issues/android/-/issues/2192
+    
+    Change-Id: Ib46ccb50ac091469caf99a73a5a08942cbc457f6
+
+[33mcommit e833c750dc2386cadb26656c889a02a6661e40e9[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Sat Aug 1 14:38:27 2020 +0200
+
+    VolumeDialog: Prevent hiding the ally stream
+    
+    * There is a rare case that the ally stream is one of the streams
+      we add at the expanded panel. In this case while collapsing we
+      would remove the ally stream which results in not showing a
+      stream at all. (Steps to reproduce: While receiving a call,
+      open the volume panel, expand it and collapse it again.)
+    
+    * Fix that by testing if the stream to hide while collapsing is the
+      ally stream and if it is, do not hide it.
+    
+    Change-Id: Iab4c57ab3ded2c61124594320d5109a52c77f167
+
+[33mcommit ad142fc0a899324ec249202d4ff5b26bcfb9ec97[m
+Author: Jesse Chan <jc@lineageos.org>
+Date:   Fri Jun 5 02:17:36 2020 +0800
+
+    VolumeDialog: Implement expand/collapse animation
+    
+    Change-Id: Ic226d3d22fc434df7cd265c77fb99c33664e974b
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit c72eeef3926c5cce21721b7a35856fa7d45c7ed4[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Fri Jun 12 17:34:45 2020 +0200
+
+    VolumeDialog: Move the media output selector next to the expandable indicator
+    
+    * Keep the non-expanded panel as slim as possible.
+    
+    Change-Id: Ic0d171c1f52ad8f50e14f161431e41d49da6cad6
+
+[33mcommit c568d0189aee88f92f41644eb718429fedefffff[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Sun May 31 15:28:04 2020 +0200
+
+    VolumeDialog: Treat ring volume the same as others on icon tap
+    
+    * We don't need to treat the ring volume different here,
+      if it's set to 0 it already sets the ringer mode to
+      vibration on supported devices.
+    
+    * This makes sure that the row still displays the correct
+      volume after tapping the icon, previously it only changed
+      the ringer mode but left the slider at the previous value.
+    
+    Change-Id: Iabd18246c41c102ad0c1f49b7525cd188b01a7c4
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit 4f36fbdbc96d080546fa8b4066f95f75dfbce6c6[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Sun May 31 13:40:13 2020 +0200
+
+    VolumeDialog: Fix muting streams with a minimal volume of 1
+    
+    * Alarm and voice call streams report 1 as levelMin
+      and hence ss.muted is never true, so that the muted
+      icon never shows. After the first tap lastAudibleLevel
+      is 1 so that the second tap only sets it back to 1,
+      the minimal value for some streams.
+      That leads to a bad UX when tapping on the icon
+      because the first tap sets it to the minimal level and
+      another tap just keeps it there.
+    
+    * With this patch we only set lastAudibleLevel if the
+      current level is higher then levelMin instead of the
+      hard-coded value of 0 so that the first tap sets the
+      volume to its minimal value and the icon changes to the
+      muted icon and the second tap restores the previous volume.
+    
+    * Also replace the check to show the muted icon with a check
+      wether the current level is the minimal level.
+    
+    * Increase the default value of lastAudibleLevel to 2 so that
+      it is never equal to the minimal value.
+    
+    Change-Id: I6d0d3960a42c949e2afd61eab86f5e3ffb8fa1b5
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit 181981c2f80442191dbc9e1cfb09e7a7f19f2db2[m
+Author: Giuseppe Maggio <jertlok@protonmail.com>
+Date:   Wed Mar 13 22:31:57 2019 +0100
+
+    VolumeDialog: Hide the music row if there is an ally stream
+    
+    - Introduce the concept of tracking ally streams, useful
+      when you are still on a call, for instance, but you also
+      want to change the media volume for a future use. When
+      you tap on the media row the calling row will disappear
+      because of AOSP logic. With this patch, we hide the music
+      row if there is a "special" row, like the voice call volume
+      row, and show it on the expanded panel like our other custom
+      rows. After collapsing the expanded panel we set active
+      stream back to this "special" row.
+    
+    Change-Id: I23792369cf1fd8e0b4d6913c67d02bd4c09f1ac7
+    Co-authored-by: Arian <arian.kulmer@web.de>
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit 656e2b8971cf222d97bc8d892da9479ed7559a4b[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Wed May 27 00:38:47 2020 +0200
+
+    VolumeDialog: Set the gravity and rotation based on the panels location
+    
+    Change-Id: Id59378ef9b980908d9bb05369f131deb27d3bb28
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit 831596e8bf7d89011533d4250e3ef6b4810ad03f[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Tue May 26 22:13:26 2020 +0200
+
+    VolumeDialog: Show the notification stream when unlinked
+    
+    Change-Id: I0e6d0dda5c0f57181ea94f4b249465fe42e5fb02
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit 9e033bb879da2bdad4d130896a7bd439b226682e[m
+Author: HrX03 <dn.bianco03@gmail.com>
+Date:   Sun Jun 21 14:08:53 2020 +0200
+
+    VolumeDialog: Convert CustomDialog to a View and configure ViewTreeObserver
+    
+    * This lets us pass touch events to the parent view while
+      using match_parent width to avoid jumpy animations.
+    
+    Thanks to Alex (treydev) for the ViewTreeInspector animation trick!
+    
+    Change-Id: Ie3c9af4d9f45b688c6a82ec37ae1c7d1a116ac8d
+
+[33mcommit ebe6026dbb9bf1b661339380c7e258e044c8df54[m
+Author: HrX03 <dn.bianco03@gmail.com>
+Date:   Thu Mar 7 17:50:40 2019 +0000
+
+    VolumeDialog: Redo expanded volume panel
+    
+    [ HrX03 | AgentFabulous - POSP ]
+    - Google nuked expanded volume panel in pie. Redo the current
+      implementation to bring this back from the past and dejank it.
+    - Back to Android 8.x functionality!
+    
+    - Show the media output selector to not loose functionality.
+    - Increase ringer vibrate icon width/height to 24 to match the
+      other icons
+    
+    Change-Id: Ie4931a4ae09483ba737a74fc32ed0a1f6acf105d
+    Co-authored-by: Kshitij Gupta <kshitijgm@gmail.com>
+    Co-authored-by: Arian <arian.kulmer@web.de>
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit f6bedc7da02e5b758ecddb1c81217afff7a73cc1[m
+Author: Jesse Chan <jc@lineageos.org>
+Date:   Wed Jun 24 06:08:19 2020 +0800
+
+    VolumeDialog: notifyVisible after the volume panel is fully hidden
+    
+    notifyVisible(false) leads to reset of active stream. As a result,
+    the current active row will be untinted. Currently, this happens
+    immediately after the dismissal is requested, before the volume panel
+    is fully hidden.
+    
+    User can notice the row has been untinted before the panel is hidden.
+    
+    This changes moves notifyVisible to the end of animation so the volume
+    panel appearance will be consistent in between.
+    
+    Change-Id: Iacd83d48634a11bc248c9a2a45b68b53256fdcb2
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit 0c7af949d225407b71136e0360f85f93c3fff45a[m
+Author: Jesse Chan <jc@lineageos.org>
+Date:   Wed Jun 24 05:41:39 2020 +0800
+
+    VolumeDialog: display default row when active row is notification
+    
+    Commit "frameworks: Add unlinked ringtone and notification volumes"
+    introduced STREAM_NOTIFICATION. However, this stream type, although
+    marked as important, was not added to the list in shouldBeVisibleH.
+    As a result, the volume panel behavior of STREAM_NOTIFICATION deviates
+    from other user-facing streams like media, call and ring.
+    
+    This change adds STREAM_NOTIFICATION so the behavior becomes consistent.
+    
+    Change-Id: I092c5bf0ae8cbee85af6adfa0da308dfdb60e66a
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit 63f65d4722de6b33adaf425914f31b1ec8ad953b[m
+Author: Arian <arian.kulmer@web.de>
+Date:   Wed Jun 24 03:12:02 2020 +0800
+
+    SystemUI: fix size of icon of vibrate ringer mode
+    
+    Vibrate ringer mode icon uses 19dp height and width while
+    all other ringer modes use 24dp. This leads to inconsistent
+    and ugly vibrate icon in volume panel.
+    
+    Change-Id: I8733aef4e9a68fe994815e5c8d92afe60f48f704
+    Signed-off-by: Jesse Chan <jc@lineageos.org>
+
+[33mcommit b43f6be798efd0fae4f094f72569075f751f4865[m
+Author: jie shen <jie.shen@unisoc.com>
+Date:   Wed Jul 29 10:27:51 2020 +0800
+
+    Add isFaceAuthEnabledForUser checks in KeyguardLiftController
+    
+    When request pick gesture sensor, judge that if the current user does not turn on the face unlocking function, the sensor should not be Listening
+    
+    Fixes: 161954958
+    Test: presubmit
+    
+    Change-Id: I34552315049e07f123403fe693251edb460fef5d
+
+[33mcommit ede11b03d9cce5b95e61c26a769fab3a2d7a8b15[m
+Author: Chris Wailes <chriswailes@google.com>
+Date:   Tue Jan 28 17:26:56 2020 -0800
+
+    Purge unused native memory before Zygote fork events
+    
+    This CL causes the Zygote to purge unused native memory before fork
+    events. This results in a decrease in the RSS before a fork, which
+    decreases false sharing between parent and child, and results in less
+    private dirty memory in the child when allocations and deallocations
+    begin to dirty bookkeeping data on pages in the anon:libc_malloc
+    memory region.
+    
+    The result of these changes is a negligible change to application
+    startup times, the reduction of usap32 process private dirty memory by
+    40 KiB and usap64 process private dirty memory by 128 KiB.  Application
+    RSS and private dirty memory usage (for Calendar) was reduced by 804 KiB
+    and 624 KiB respectively.
+    
+    Test: Launched Calendar 500 times
+    Change-Id: I52f72a5a02182a9e2748f7f87b45665059d9891a
+    Merged-In: I52f72a5a02182a9e2748f7f87b45665059d9891a
+
+[33mcommit ae45670b0d2d9f60655ba6fb9d6f639117bd2db6[m
+Author: xuejianbao <xuejianbao@xiaomi.com>
+Date:   Tue Jul 14 18:06:18 2020 +0800
+
+    Fix color mismatch of pointers
+    
+    When drawing a point, it should be used the same index for coordinates and state.
+    
+    Test: make
+    Signed-off-by: xuejianbao <xuejianbao@xiaomi.com>
+    Change-Id: I6d66e52b029d7b08663f62ab46125230b7f9a7c5
+
+[33mcommit 59a98f614f51e49d42cfe08c57d6bbd29ca5ad93[m
+Author: Chris Wailes <chriswailes@google.com>
+Date:   Wed Mar 4 13:40:28 2020 -0800
+
+    Teaches the ProcessCpuTracker about USAPs.
+    
+    This CL updates the ProcessCpuTracer.getName method to force a refresh
+    of the process name when the current state indicates that it was named
+    either 'usap32' or 'usap64'.  This will prevent false attribution of
+    process statistics to system service processes.
+    
+    Bug: 146614089
+    Test: Treehugger
+    Change-Id: Ieca4715b7aeb44ef7d1ec98773b25bdfa0a9fc6b
+
+[33mcommit e96ecdbffe09ba8e766c0459411082759b59b5d6[m
+Author: Chris Wailes <chriswailes@google.com>
+Date:   Thu Feb 6 15:03:24 2020 -0800
+
+    Adds Zygote policy flags to control how applications are launched
+    
+    This patch adds a zygote policy parameter to functions in the
+    ActivityManagerService (and associated classes) to allow for different
+    launch behavior based on the triggering event.  This will allow for
+    latency sensitive applications to utilize the Unspecialized App Process
+    Pool, without other processes draining the pool and causing excessive
+    refill events.
+    
+    Test: Booted and launched several apps
+    Bug: 147613193
+    Bug: 146614089
+    Change-Id: Ib0a51c8720f95a7eafcab4ad2b5bb08f27a58d8c
+    Merged-In: Ib0a51c8720f95a7eafcab4ad2b5bb08f27a58d8c
+    (cherry picked from commit 4d0518858881d94c3366ab6b709195bdaeee90be)
+
+[33mcommit eafbea5fb562f5538b6b608e28005bde2d4bb6db[m
+Author: Riddle Hsu <riddlehsu@google.com>
+Date:   Fri May 17 23:10:16 2019 -0600
+
+    Start process of next activity with top priority in advance
+    
+    In common cases, to resume the next activity we need to wait for the
+    current one to be paused. Since starting a process for activity is
+    asynchronous,
