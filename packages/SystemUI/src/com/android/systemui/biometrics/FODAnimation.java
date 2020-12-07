@@ -66,7 +66,8 @@ public class FODAnimation extends ImageView implements TunerService.Tunable {
         R.drawable.fod_op_ripple_recognizing_anim,
         R.drawable.fod_blue_firework_recognizing_anim,
         R.drawable.fod_coloros7_1_recognizing_anim,
-        R.drawable.fod_coloros7_2_recognizing_anim
+        R.drawable.fod_coloros7_2_recognizing_anim,
+        R.drawable.fod_mi_a3_recognizing_anim
     };
 
     public FODAnimation(Context context, int mPositionX, int mPositionY) {
